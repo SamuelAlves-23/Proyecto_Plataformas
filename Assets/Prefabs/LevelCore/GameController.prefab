@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7741128958984268611}
   - component: {fileID: 7741128958984268612}
+  - component: {fileID: 7741128958669280813}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -49,6 +50,7 @@ MonoBehaviour:
   prefabs:
   - {fileID: 8134658930155075446, guid: 29256a90df6e8584da34ed4f296f7037, type: 3}
   - {fileID: 1925770773985119186, guid: 64dfb00cb33d2e64992d1ead1d7b2a63, type: 3}
+  - {fileID: 373527534190692647, guid: dbdb3958b0949064b8c086e2fef13bcc, type: 3}
   areaType: 0
   rectangleSize: {x: 0, y: 0}
   circleRadius: 1
@@ -61,6 +63,38 @@ MonoBehaviour:
   overlapLayers:
     serializedVersion: 2
     m_Bits: 0
+--- !u!114 &7741128958669280813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741128958984268610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b32e29dce4059486b93e37e5202a1e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counter: 1
+  multiplier: 1
+  alertIfReachesValue: 1
+  targetValue: 10
+  comparison: 1
+  onValueReached:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7741128958984268612}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7741128959342091014
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +106,9 @@ GameObject:
   - component: {fileID: 7741128959342091033}
   - component: {fileID: 7741128959342091032}
   - component: {fileID: 7741128959342091015}
+  - component: {fileID: 7741128958669280812}
+  - component: {fileID: 7741128958669280814}
+  - component: {fileID: 7741128958669280818}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -135,3 +172,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34df3d368414042f5b6846c03709ebb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7741128958669280812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741128959342091014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd7cd344b5034f74b2e131518eb90b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: GoalReached
+  onMessageReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7741128958669280818}
+        m_TargetAssemblyTypeName: UP_Messenger, Assembly-CSharp
+        m_MethodName: UP_SendMessage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7741128958669280813}
+        m_TargetAssemblyTypeName: UP_Counter, Assembly-CSharp
+        m_MethodName: UP_IncreaseCounter
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7741128958984268612}
+        m_TargetAssemblyTypeName: UP_Spawner, Assembly-CSharp
+        m_MethodName: UP_Instantiate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7741128958669280814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741128959342091014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216787c5e9f9247d8800d6d6fd82e085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCreate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7741128958984268612}
+        m_TargetAssemblyTypeName: UP_Spawner, Assembly-CSharp
+        m_MethodName: UP_Instantiate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7741128958669280818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741128959342091014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e16f751db1a4d21a519775cf180d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiverType: 2
+  receiver: {fileID: 0}
+  receiverName: 
+  receiverTag: Layout
+  message: Destroy
+  messages: []
+  randomizeMessage: 0

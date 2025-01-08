@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2301748644123682024}
+  - component: {fileID: 385118764365765041}
+  - component: {fileID: 5645752555135097554}
   m_Layer: 0
   m_Name: Layout10
-  m_TagString: Untagged
+  m_TagString: Layout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,6 +34,47 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &385118764365765041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134658930155075446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3348b43c905be40dca701695a42a3fca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlesPrefab: {fileID: 0}
+--- !u!114 &5645752555135097554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134658930155075446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd7cd344b5034f74b2e131518eb90b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Destroy
+  onMessageReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 385118764365765041}
+        m_TargetAssemblyTypeName: UP_SelfDestroyer, Assembly-CSharp
+        m_MethodName: UP_SelfDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &5683747117252076917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45,7 +88,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2331500845769276319, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2331500845769276319, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -54,11 +97,11 @@ PrefabInstance:
     - target: {fileID: 2331500845769276319, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 5683747117252076865}
+      objectReference: {fileID: 4994904347294094147}
     - target: {fileID: 2331500845769276319, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 7979145202083061480}
+      objectReference: {fileID: 385118764365765041}
     - target: {fileID: 2331500845769276319, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
       propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
@@ -138,38 +181,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6257028316617222068, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
   m_PrefabInstance: {fileID: 5683747117252076917}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5297752802801611107 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 533078392831218710, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
+--- !u!114 &4994904347294094147 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 842682107690038838, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
   m_PrefabInstance: {fileID: 5683747117252076917}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5683747117252076865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5297752802801611107}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24e16f751db1a4d21a519775cf180d40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  receiverType: 1
-  receiver: {fileID: 0}
-  receiverName: TimerController
-  receiverTag: 
-  message: GoalReached
-  messages: []
-  randomizeMessage: 0
---- !u!114 &7979145202083061480 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2331500845769276317, guid: e301e593e33eaf144b6d67f8efb1d2d0, type: 3}
-  m_PrefabInstance: {fileID: 5683747117252076917}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5297752802801611107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3348b43c905be40dca701695a42a3fca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
