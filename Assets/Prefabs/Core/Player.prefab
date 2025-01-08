@@ -95,7 +95,7 @@ MonoBehaviour:
   counter: 0
   multiplier: 1
   alertIfReachesValue: 1
-  targetValue: 2
+  targetValue: 1
   comparison: 1
   onValueReached:
     m_PersistentCalls:
