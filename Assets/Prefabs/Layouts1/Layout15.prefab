@@ -652,6 +652,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MidPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 4823159257587196528, guid: a68f476df941e454c80aa01127750bd7, type: 3}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68f476df941e454c80aa01127750bd7, type: 3}
 --- !u!4 &7294180174288042031 stripped
