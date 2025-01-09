@@ -125,8 +125,8 @@ GameObject:
   - component: {fileID: 8588773415812573640}
   - component: {fileID: 183951903}
   - component: {fileID: 183951904}
-  - component: {fileID: 3027244265190718271}
   - component: {fileID: 4238845991664901573}
+  - component: {fileID: 197712265}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -254,19 +254,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &3027244265190718271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8588773415812573646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3348b43c905be40dca701695a42a3fca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  particlesPrefab: {fileID: 0}
 --- !u!114 &4238845991664901573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,9 +273,9 @@ MonoBehaviour:
   onCollisionEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3027244265190718271}
-        m_TargetAssemblyTypeName: UP_SelfDestroyer, Assembly-CSharp
-        m_MethodName: UP_SelfDestroy
+      - m_Target: {fileID: 197712265}
+        m_TargetAssemblyTypeName: UP_Messenger, Assembly-CSharp
+        m_MethodName: UP_SendMessage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -298,6 +285,25 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &197712265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588773415812573646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e16f751db1a4d21a519775cf180d40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiverType: 1
+  receiver: {fileID: 0}
+  receiverName: GameController
+  receiverTag: 
+  message: GameOver
+  messages: []
+  randomizeMessage: 0
 --- !u!1 &8588773416088628167
 GameObject:
   m_ObjectHideFlags: 0

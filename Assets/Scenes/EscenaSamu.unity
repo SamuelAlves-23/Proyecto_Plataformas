@@ -122,17 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &26516514 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8588773415812573640, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-  m_PrefabInstance: {fileID: 8588773415700483029}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a53d4e9ddb5af4475ac0c7883b43911d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1005309231 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7741128959342091015, guid: 2ff47710a53f5844cb5d80a7fbe851c1, type: 3}
@@ -482,7 +471,7 @@ PrefabInstance:
     - target: {fileID: 7741128958984268612, guid: 2ff47710a53f5844cb5d80a7fbe851c1, type: 3}
       propertyPath: prefabs.Array.data[9]
       value: 
-      objectReference: {fileID: 373527534190692647, guid: 7490597eac5f6d548bb91492c157bd04, type: 3}
+      objectReference: {fileID: 373527534190692647, guid: 30dbe29b1059fcb458332fe99accba8f, type: 3}
     - target: {fileID: 7741128959342091014, guid: 2ff47710a53f5844cb5d80a7fbe851c1, type: 3}
       propertyPath: m_Name
       value: GameController
@@ -601,30 +590,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 523487782, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-      propertyPath: key
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 523487782, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-      propertyPath: onKeyDown.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 523487782, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-      propertyPath: onKeyDown.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 26516514}
-    - target: {fileID: 523487782, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-      propertyPath: onKeyDown.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UP_InvertScaleX
-      objectReference: {fileID: 0}
-    - target: {fileID: 523487782, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-      propertyPath: onKeyDown.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UP_Transformer, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 523487782, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
-      propertyPath: onKeyDown.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 8588773415812573641, guid: 225ff9d4efbadbd41ac805e2a039847f, type: 3}
       propertyPath: m_RootOrder
       value: 1
