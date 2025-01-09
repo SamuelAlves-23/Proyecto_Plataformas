@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Suelo
   - Layout
+  - Enemigo
+  - Pared
   layers:
   - Default
   - TransparentFX

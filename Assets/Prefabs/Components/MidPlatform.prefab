@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5684493086600344028}
   - component: {fileID: 4243645856028629087}
   m_Layer: 0
-  m_Name: MidPlatform
+  m_Name: MidPlatform1
   m_TagString: Suelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
