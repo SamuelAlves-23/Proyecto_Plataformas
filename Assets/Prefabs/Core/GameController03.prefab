@@ -151,9 +151,9 @@ MonoBehaviour:
   onValueReached:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UP_SelfDestroyer, Assembly-CSharp
-        m_MethodName: UP_SelfDestroy
+      - m_Target: {fileID: 369283876}
+        m_TargetAssemblyTypeName: UP_Messenger, Assembly-CSharp
+        m_MethodName: UP_SendMessage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -163,9 +163,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 369283876}
-        m_TargetAssemblyTypeName: UP_Messenger, Assembly-CSharp
-        m_MethodName: UP_SendMessage
+      - m_Target: {fileID: 8086056155441068353}
+        m_TargetAssemblyTypeName: UP_SelfDestroyer, Assembly-CSharp
+        m_MethodName: UP_SelfDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
