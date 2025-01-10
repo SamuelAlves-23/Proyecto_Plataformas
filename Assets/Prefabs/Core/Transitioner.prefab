@@ -81,7 +81,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'AGARRE DESBLOQUEADO
 
-    PULSA Q EN UNA PARED'
+    TE PEGAS A LAS PAREDES'
 --- !u!1 &1414205499
 GameObject:
   m_ObjectHideFlags: 0
