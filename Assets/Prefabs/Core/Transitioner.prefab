@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: 77}
+  m_AnchoredPosition: {x: -176.3, y: 100.7}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1133733890
@@ -221,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: 77}
+  m_AnchoredPosition: {x: -176.3, y: 100.7}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1537889665
@@ -303,7 +303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: 77}
+  m_AnchoredPosition: {x: -176.3, y: 100.7}
   m_SizeDelta: {x: 200, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1888462524
@@ -530,6 +530,52 @@ MonoBehaviour:
   message: UnlockDubJump
   messages: []
   randomizeMessage: 0
+--- !u!1 &5490765986824772637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 90549299171793688}
+  - component: {fileID: 6908941833774049036}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &90549299171793688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490765986824772637}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5031492800087945581}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6908941833774049036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5490765986824772637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7009d9f5e2ba04ea58a2c4d3ffe3e77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audios:
+  - {fileID: 8300000, guid: e879b9a0f9d1e024cab60147c6e3b21f, type: 3}
 --- !u!1 &8137591274302823641
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324591511050421119}
-  - component: {fileID: 1630874861}
+  - component: {fileID: 9194811751609014669}
   m_Layer: 0
   m_Name: WinGame
   m_TagString: Untagged
@@ -562,7 +608,7 @@ Transform:
   m_Father: {fileID: 5031492800087945581}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1630874861
+--- !u!114 &9194811751609014669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -571,16 +617,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8137591274302823641}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24e16f751db1a4d21a519775cf180d40, type: 3}
+  m_Script: {fileID: 11500000, guid: 7009d9f5e2ba04ea58a2c4d3ffe3e77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiverType: 2
-  receiver: {fileID: 0}
-  receiverName: 
-  receiverTag: 
-  message: WinGame
-  messages: []
-  randomizeMessage: 0
+  audios:
+  - {fileID: 8300000, guid: fd4574ea255a91045913bab43bdfb39b, type: 3}
 --- !u!1 &9203871401044605970
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +658,7 @@ Transform:
   - {fileID: 8858255787942635393}
   - {fileID: 4324591511050421119}
   - {fileID: 1414205500}
+  - {fileID: 90549299171793688}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -636,6 +678,18 @@ MonoBehaviour:
   onMessageReceived:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 6908941833774049036}
+        m_TargetAssemblyTypeName: UP_AudioPlayer, Assembly-CSharp
+        m_MethodName: UP_PlayAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 927002277}
         m_TargetAssemblyTypeName: UP_Counter, Assembly-CSharp
         m_MethodName: UP_IncreaseCounter
@@ -692,9 +746,9 @@ MonoBehaviour:
   onValueReached:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1630874861}
-        m_TargetAssemblyTypeName: UP_Messenger, Assembly-CSharp
-        m_MethodName: UP_SendMessage
+      - m_Target: {fileID: 9194811751609014669}
+        m_TargetAssemblyTypeName: UP_AudioPlayer, Assembly-CSharp
+        m_MethodName: UP_PlayAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

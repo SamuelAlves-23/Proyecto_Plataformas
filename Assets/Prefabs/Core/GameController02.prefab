@@ -114,11 +114,10 @@ MonoBehaviour:
   - {fileID: 1925770773985119186, guid: c78044877c6f15a4fac2523ec5efcc43, type: 3}
   - {fileID: 1925770773985119186, guid: c0b3d728deebb0247ae7a7dbdad751c6, type: 3}
   - {fileID: 1925770773985119186, guid: b44cad0ebcfd9eb4381cba5b47ab8066, type: 3}
-  - {fileID: 1925770773985119186, guid: 215ffb4cad2859c47ab19e2df2d44d11, type: 3}
+  - {fileID: 1925770773985119186, guid: f061145f0c8b7fc44bb0879e2a7e9a23, type: 3}
   - {fileID: 1925770773985119186, guid: 9a94afc9b676f5b47a1ad871e50a04d9, type: 3}
   - {fileID: 1925770773985119186, guid: badcb53737dacae4597c0028f7e04889, type: 3}
   - {fileID: 1925770773985119186, guid: f5476fbb378fe49498c266607ad5bff9, type: 3}
-  - {fileID: 1925770773985119186, guid: 6884f2f21375b704a86a14526af05e95, type: 3}
   areaType: 0
   rectangleSize: {x: 0, y: 0}
   circleRadius: 1
