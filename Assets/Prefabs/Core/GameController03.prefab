@@ -189,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   receiverType: 1
   receiver: {fileID: 0}
-  receiverName: Transition
+  receiverName: Transitioner
   receiverTag: 
   message: Transition
   messages: []
